@@ -1,0 +1,89 @@
+/* layout */
+#contents {}
+#section1 {height: 100vh; background: #ccc;}
+#section2 {height: 100vh; }
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* container */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* sec1 */
+.sec1 {
+    height: 100vh;
+    background: #ccc;
+}
+.sec1 .mText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.sec1 .mText span {
+    font-size: 8vw;
+    line-height: 7.5vw;
+    font-family: "Poppins";
+    font-weight: 800;
+    color: #303030;
+    white-space: nowrap;
+    font-style: italic;
+    letter-spacing: -2px;
+    display: inline-block;
+}
+.sec1 .mText span:nth-child(1){padding-left: 5vw;}
+.sec1 .mText span:nth-child(2){padding-right: 14vw;}
+.sec1 .mText span:nth-child(3){
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: #303030;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    margin-left: 35vw;
+    position: relative;
+}
+.sec1 .mText span:nth-child(3):before {
+    content: 'Portfolio website CODING';
+    position: absolute; 
+    left: -20vw; top: 50%; 
+    transform: translateY(-50%);
+    font-size: 20px;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-fill-color: #303030;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.sec1 .mText span:nth-child(4){
+    -webkit-text-stroke-width: 0.1vw;
+    -webkit-text-stroke-color: #303030;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+}
+
+
+/* sec2 */
+.about {overflow: hidden;}
+.about .left {float: left; width: 50%; height: 500px; background: #444;}
+.about .right {float: left; width: 50%; height: 500px; background: #ddd;}
+
+
+
+/* media */
+@media (max-width: 1000px){
+    .sec1 .mText span:nth-child(3):before {display: none;}
+    
+    .about {overflow: hidden;}
+    .about .left {float: left; width: 100%;}
+    .about .right {float: left; width: 100%; }
+}
+
+
+
+
+
+
